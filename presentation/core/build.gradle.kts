@@ -1,20 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.devtools.ksp")
-    id("com.google.dagger.hilt.android")
 }
 
 android {
-    namespace = "com.myapp"
+    namespace = "com.myapp.presentation"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.myapp"
+//        applicationId = "com.myapp.presentation"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+//        targetSdk = 34
+//        versionCode = 1
+//        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -52,10 +50,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":data"))
-    implementation(project(":domain"))
-    implementation(project(":di"))
-    implementation(project(":presentation:main"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -72,14 +66,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0")
-
-    implementation("org.orbit-mvi:orbit-viewmodel:8.0.0")
-    implementation("org.orbit-mvi:orbit-compose:8.0.0")
-    testImplementation("org.orbit-mvi:orbit-test:8.0.0")
-
-    // Hilt
-    implementation("com.google.dagger:hilt-android:2.48.1")
-    ksp("com.google.dagger:hilt-compiler:2.48.1")
 }

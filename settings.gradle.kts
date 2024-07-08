@@ -21,3 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "My Application"
 include(":app")
+include(":presentation:core")
+include(":presentation:search")
+include(":domain")
+include(":data")
+include(":presentation:main")
+include(":di")
