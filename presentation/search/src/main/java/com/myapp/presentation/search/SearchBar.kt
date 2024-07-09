@@ -1,4 +1,4 @@
-package com.myapp.search
+package com.myapp.presentation.search
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.myapp.main"
+    namespace = "com.myapp.presentation.main"
     compileSdk = 34
 
     defaultConfig {

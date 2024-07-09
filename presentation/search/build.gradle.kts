@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.myapp.search"
+    namespace = "com.myapp.presentation.search"
     compileSdk = 34
 
     defaultConfig {

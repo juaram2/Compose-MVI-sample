@@ -1,4 +1,4 @@
-package com.myapp.search
+package com.myapp.presentation.search
 
 import androidx.lifecycle.viewModelScope
 import com.myapp.domain.model.SearchModel

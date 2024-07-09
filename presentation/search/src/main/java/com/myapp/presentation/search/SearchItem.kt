@@ -1,4 +1,4 @@
-package com.myapp.search
+package com.myapp.presentation.search
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable

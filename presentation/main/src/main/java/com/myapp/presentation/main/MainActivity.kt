@@ -1,4 +1,4 @@
-package com.myapp.main
+package com.myapp.presentation.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.myapp.presentation.theme.MyApplicationTheme
-import com.myapp.search.SearchScreen
+import com.myapp.presentation.search.SearchScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

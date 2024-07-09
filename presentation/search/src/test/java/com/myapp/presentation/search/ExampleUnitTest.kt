@@ -1,4 +1,4 @@
-package com.myapp.main
+package com.myapp.presentation.search
 
 import org.junit.Test
 
